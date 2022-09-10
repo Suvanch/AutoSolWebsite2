@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>autoSol</title>
+  <meta property="og:title" content="autoSol" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" />
+</head>
+
+<body>
+  <div>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/assets/css/generateStyle.css') }}">
+    
+    <div class="home-container">
+      <div class="home-nav-bar">
+        <img alt="image"  onclick = "location.href='/'" src="./static/assets/img/logo.svg" class="home-image" />
+        <button class="home-button button">
+          <span class="home-text e24">
+            <span class="home-text1"></span>
+              <span>Sign In/Sign Up</span>
+
+          </span>
+        </button>
+      </div>
+      <div class="home-generate-page" id="home-generate-page">
+        <div class="home-slider-continer">
+          <label class="switch">
+            <input id="contractLevel" type="checkbox" onclick="Check(this)" autocomplete="off">
+            <span class="slider round">
+              <p class=" sliderText">Basic
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced</p>
+
+            </span>
+          </label>
+        </div>
+        <div class="home-generate-window" id="home-generate-window">
+          <form id = "basic" name = "basic" method="POST" action="/download" enctype='multipart/form-data'   class="home-ul list">
+            <li class="home-li list-item">
+              <div class="home-container2">
+                <input name = "tname" id="tname" type="text" required="true" placeholder="Token Name" class="home-textinput input e24" />
+              </div>  
+            </li>
+            <li class="home-li1 list-item">
+              <div class="home-container3">
+                <input name = "tsymbol" id = "tsymbol" type="text" required="true" placeholder="Token Symbol" class="home-textinput1 input e24" />
+              </div>
+            </li>
+            <li class="home-li2 list-item">
+              <div class="home-container4">
+                <input name = "tsupply" id = "tsupply" type="text" required="true" placeholder="Token Supply" class="home-textinput2 input e24" />
+              </div>
+            </li>
+            <span class="advanced-order-price-text">Order Price:</span>
+            <span class="advanced-price-text">FREE</span>
+            <span class="advanced-terms-text">
+              I have read, understood and agreed to Auto Sol&apos;s Terms of
+              Use.
+            </span>
+            <input name = "terms" type="checkbox" checked="false" class="advanced-terms-checkbox" autocomplete="off"/>
+            
+            <button  class="advanced-button1 e36" onclick="generateBasic()">
+              <span class="advanced-text3">
+                <a>Generate</a>
+              </span>
+            </button>    
+          </form>
+
+          <form method="POST" action="/upload" id = "advanced"  enctype='multipart/form-data' class="" style="display:none" >
+            <div class="advanced-container1">
+              <ul class="advanced-basic-info-list list">
+                <li class="home-li list-item">
+                  <div class="home-container2">
+                    <input name = "tname" type="text" required="true" placeholder="Token Name" class="home-textinput input e24" />
+                  </div>  
+                </li>
+                <li class="home-li1 list-item">
+                  <div class="home-container3">
+                    <input name = "tsymbol" type="text" required="true" placeholder="Token Symbol" class="home-textinput1 input e24" />
+                  </div>
+                </li>
+                <li class="home-li2 list-item">
+                  <div class="home-container4">
+                    <input name = "tsupply" type="text" required="true" placeholder="Token Supply" class="home-textinput2 input e24" />
+                  </div>
+                </li>
+              </ul>
+              <span class="advanced-mintable-text e24">Mintable:</span>
+              <input
+                type="checkbox"
+                checked="true"
+                class="advanced-mintable-checkbox"
+              />
+              <span class="advanced-burnable-text e24">Burnable:</span>
+              <input
+                type="checkbox"
+                checked="true"
+                class="advanced-burnable-checkbox"
+              />
+              <span class="advanced-random-code-text e24">Random Code:</span>
+              <input
+                type="checkbox"
+                checked="true"
+                class="advanced-randomcode-checkbox"
+              />
+              <span class="advanced-whitelist-text e24">Scam Code:</span>
+              <input
+                type="checkbox"
+                checked="true"
+                class="advanced-whitelist-checkbox"
+              />
+              <div id = "customCodeContainer" class="advanced-custom-code-container">
+                <span class="advanced-custome-code-text e24">
+                  Custom Functions
+                </span>
+                <input id="customCodeInput" type="text" placeholder="&lt;&gt;" class="advanced-custome-code-input input e24"/>
+                <label class="advanced-custome-code-switch">
+                  <input id="isCustomCode" type="checkbox" onclick="CustomCodeCheck(this)" autocomplete="off">
+                  <span class="coustomCodeSilder">
+                    <p class=" coustomFunctionSwitchText">On&nbsp;&nbsp;&nbsp;&nbsp;Off</p>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div id="taxContainer" class="advanced-tax-container">
+              <span class="advanced-tax-text e24">Tax</span>
+              <label class="advanced-custome-code-switch" >
+                  <input id="isTax" type="checkbox" onclick="TaxCheck(this)" autocomplete="off">
+                  <span class="coustomCodeSilder">
+                    <p class=" coustomFunctionSwitchText">On&nbsp;&nbsp;&nbsp;&nbsp;Off</p>
+                  </span>
+                </label>
+              <div id = "taxWindow" class="advanced-tax-window">
+                <span class="advanced-user-tax-text">User Tax :</span>
+                <input
+                  type="text"
+                  required="true"
+                  class="advanced-user-tax-input"
+                />
+                <span class="advanced-percent-symbol">%</span>
+                <span class="advanced-owner-tax-text">Owner Tax :</span>
+                <input
+                  type="text"
+                  required="true"
+                  class="advanced-owner-tax-input"
+                />
+                <span class="advanced-percent-symbol1">%</span>
+                <span class="advanced-max-tax-text">Max Tax :</span>
+                <input
+                  type="text"
+                  required="true"
+                  class="advanced-max-tax-input"
+                />
+                <span class="advanced-percent-symbol2">%</span>
+                <span class="advanced-send-to-text">Send to...</span>
+                <div class="distroContiner"id="cont">
+
+                </div>
+                <!--<div class="advanced-destination1container" ></div> -->
+                <button type ="button"  class="advanced-add-distro-button button"id="addRows" onclick="addRow()">
+                  Button
+                </button>
+              </div>
+            </div>
+            <span class="advanced-order-price-text">Order Price:</span>
+            <span class="advanced-price-text">0.1 ETH</span>
+            <span class="advanced-terms-text">
+              I have read, understood and agreed to Auto Sol&apos;s Terms of
+              Use.
+            </span>
+            <input
+              type="checkbox"
+              checked="true"
+              class="advanced-terms-checkbox"
+            />
+
+
+            <button  class="advanced-button1 e36" onclick="generateBasic()">
+              <span class="advanced-text3">
+                <a >Generate</a>
+
+              </span>
+            </button>
+          </a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script src="{{url_for('static', filename='/assets/js/bundle.js')}}"></script>
+
+<script src="{{url_for('static', filename='/assets/js/generate.js')}}"></script>
+
+
+
+
+</html>

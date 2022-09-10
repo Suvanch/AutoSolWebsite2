@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto App</title>
+
+    <!-- ------------ Fonts Style Sheet ------------ -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/fonts.css') }}">
+    <!-- ------------ Font Awesome CDN ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ------------ Main Style Sheet ------------ -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/assets/css/homeStyle.css') }}">
+
+
+</head>
+
+<body>
+
+    <!-- --------------------------- Header --------------------------- -->
+    <header id="header">
+        <div class="container">
+            <div class="content">
+                <div class="left"></div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="{{ url_for('static', filename='/assets/img/logo.svg') }}" alt="">
+                    </a>
+                </div>
+                <div class="buttons">
+                    <a href="#">Sign In /</a>
+                    <a href="#"> Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------------xxx--- Header ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Hero --------------------------- -->
+    <section class="hero">
+        <div class="container">
+            <div class="">
+                <h1>Generate Your <br>
+                    Crypto Token Today</h1>
+            </div>
+            <div class="button">
+                <button class="btn" onclick = "location.href='/generate'">Create Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------xxx--- Hero ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Section 01 --------------------------- -->
+    <section class="section-01">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-center text-white heading">Start Here</h1>
+                <div class="box-wrapper">
+                    <div class="box">
+                        <h2>Install Metamask</h2>
+                        <p>You need to have Metamask installed with an amount of ETH to pay for contract deployment.</p>
+                        <a href="#">Full Tutorial</a>
+                    </div>
+                    <div class="box">
+                        <h2>Build</h2>
+                        <p>Enter token name, symbol, and number of tokens to generate your new and unique contract.</p>
+                    </div>
+                    <div class="box">
+                        <h2>Deploy</h2>
+                        <p>Confirm your transaction using MetaMask. Once deployed your Token is ready to use.</p>
+                    </div>
+                </div>
+                <h1 class="text-center text-white youtube-box-heading">Video Tutorial</h1>
+                <div class="box youtube">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </di v>
+    </section>
+    <!-- ---------------------xxx--- Section 01 ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Section 02 --------------------------- -->
+    <section class="section-01 section-02">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-center text-white heading">Pricing</h1>
+                <div class="box-wrapper">
+                    <div class="box">
+                        <h2>Basic</h2>
+                        <ul>
+                            <li>Custome Name</li>
+                            <li>Custome Symbol</li>
+                            <li>Custome Supply</li>
+                            <li>Custome Function</li>
+                        </ul>
+                        <div>
+                            <h1>Free</h1>
+                            <button class="btn" onclick = "location.href='/generate'">Create</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Advanced</h2>
+                        <ul>
+                            <li>Custome Name</li>
+                            <li>Custom Symbol</li>
+                            <li>Custom Supply</li>
+                            <li>Mintable</li>
+                            <li>Brunable</li>
+                            <li>Random Code</li>
+                            <li>Tax</li>
+                            <li>Tax Dispersal</li>
+                            <li>Custom Function</li>
+                        </ul>
+                        <div>
+                            <h1>0.1 ETH</h1>
+                            <button class="btn" onclick = "location.href='/generate'">Create</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3 class=" text-white">*Gas price is not included in the estimation*</h3>
+                    <p class="text-white">Gas price is the cost to deploy a <br> contract on the etherium
+                        network</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------xxx--- Section 02 ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Section 03 --------------------------- -->
+    <section class="section-01 section-03">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-center text-white heading">Features</h1>
+                <div class="box-wrapper">
+                    <div class="box">
+                        <h2>Mintable</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Brunable</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Random Code</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Custom Functions</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Tax</h2>
+                    </div>
+                    <div class="box">
+                        <h2>Tax Distribution</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------xxx--- Section 03 ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Section 04 --------------------------- -->
+    <section class="section-01 section-04">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-center text-white heading">FAQ</h1>
+                <div class="faq-wrapper" id="faq-wrapper">
+                    <div class="faq-box active">
+                        <div class="question">
+                            <h2>How Long does take to deploy a contract ?</h2>
+                        </div>
+                        <div class="answare">
+                            <p>Deploying a contract is like sending a transaction and it needs some gas amount to
+                                process. Therefore it may take anywhere from 15sec to 5 min.</p>
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <div class="question">
+                            <h2>How Long does take to deploy a contract ?</h2>
+                        </div>
+                        <div class="answare">
+                            <p>Deploying a contract is like sending a transaction and it needs some gas amount to
+                                process. Therefore it may take anywhere from 15sec to 5 min.</p>
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <div class="question">
+                            <h2>How Long does take to deploy a contract ?</h2>
+                        </div>
+                        <div class="answare">
+                            <p>Deploying a contract is like sending a transaction and it needs some gas amount to
+                                process. Therefore it may take anywhere from 15sec to 5 min.</p>
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <div class="question">
+                            <h2>How Long does take to deploy a contract ?</h2>
+                        </div>
+                        <div class="answare">
+                            <p>Deploying a contract is like sending a transaction and it needs some gas amount to
+                                process. Therefore it may take anywhere from 15sec to 5 min.</p>
+                        </div>
+                    </div>
+                    <div class="faq-box">
+                        <div class="question">
+                            <h2>How Long does take to deploy a contract ?</h2>
+                        </div>
+                        <div class="answare">
+                            <p>Deploying a contract is like sending a transaction and it needs some gas amount to
+                                process. Therefore it may take anywhere from 15sec to 5 min.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">More FAQ...</button>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------xxx--- Section 04 ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Section 05 --------------------------- -->
+    <section class="section-01 section-05">
+        <div class="container">
+            <div class="content">
+                <h1 class="text-center text-white heading">DISCLAIMER/COPYRIGHT</h1>
+                <div class="content-wrapper">
+                    <h2>Auto Sol and its author are free of any liability regarding Tokens built using this App, and the
+                        use that is made of them. Tokens built on Token Generator, their projects, their teams, their
+                        use of Token (as well as anything related to Token) are in no way connected to Token Generator
+                        or its author.</h2>
+                    <p>Token Generator's code is provided under MIT License. Anyone can use it as per their needs. The
+                        App's purpose is to make people able to tokenize their ideas without coding. Source code is
+                        verified and well tested and continuously update to reduce risk of bugs and introduce language
+                        optimizations. Anyway the purchase of tokens involves a high degree of risk. Before acquiring
+                        tokens, it is recommended to carefully weighs all the information and risks detailed in Token
+                        owner's Conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------xxx--- Section 05 ---xxx--------------------- -->
+
+
+    <!-- --------------------------- Footer --------------------------- -->
+    <footer>
+        <div class="container">
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+    <!-- ---------------------xxx--- Footer ---xxx--------------------- -->
+
+
+    <!-- ------------ Main Scripts ------------ -->
+    <script src="{{url_for('static', filename='/assets/js/app.js')}}"></script>
+</body>
+
+</html>

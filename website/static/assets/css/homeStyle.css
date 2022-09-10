@@ -1,0 +1,1120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open-Sans";
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  background: url("../img/pageBackground.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* ======================================== Home Page ======================================== */
+/* ======================= Header ======================= */
+header#header {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+header#header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#header .content .logo a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+header#header .content .buttons a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* =================xxx=== Header ===xxx================= */
+/* ======================= Hero ======================= */
+section.hero {
+  padding: 80px 0;
+}
+
+section.hero h1 {
+  font-size: 60px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section.hero .button {
+  text-align: right;
+}
+
+section.hero .button button {
+  outline: none;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  font-size: 25px;
+  -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* =================xxx=== Hero ===xxx================= */
+/* ======================= Section 01 ======================= */
+section.section-01 {
+  padding: 45px 0;
+}
+
+section.section-01 .content {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 30px 35px;
+}
+
+section.section-01 .content .heading {
+  font-size: 45px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+section.section-01 .content .box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.section-01 .content .box {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 1px 3px 5px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 20px 12px;
+  margin: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+section.section-01 .content .box h2 {
+  color: #FFFFFF;
+}
+
+section.section-01 .content .box p {
+  color: #F1E1F1;
+  font-weight: bold;
+  margin: 35px 0;
+}
+
+section.section-01 .content .box a {
+  text-decoration: none;
+  color: #f0a9c7;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section.section-01 .content .youtube-box-heading {
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+section.section-01 .content .box.youtube {
+  margin: 30px auto;
+  background: #F1E1F1;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.section-01 .content .box.youtube i {
+  color: red;
+  font-size: 40px;
+  -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+}
+
+/* =================xxx=== Section 01 ===xxx================= */
+/* ======================= Section 02 ======================= */
+section.section-02 {
+  padding: 45px 0;
+}
+
+section.section-02 .content .box {
+  max-width: 43%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.section-02 .content .box ul {
+  list-style: none;
+  padding: 30px 0;
+}
+
+section.section-02 .content .box ul li {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+section.section-02 .content .box h1 {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+section.section-02 .content .box button.btn {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 12px 35px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  margin-top: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* =================xxx=== Section 02 ===xxx================= */
+/* ======================= Section 03 ======================= */
+section.section-03 {
+  padding: 45px 0;
+}
+
+section.section-03 .content .box {
+  background: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4), 0 0 5px rgba(0, 0, 0, 0.4);
+  height: 170px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+section.section-03 .content .box h2 {
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+  -webkit-transform: rotate(320deg);
+          transform: rotate(320deg);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+section.section-03 .content .box:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+section.section-03 .content .box:hover h2 {
+  -webkit-transform: rotateY(226deg);
+          transform: rotateY(226deg);
+}
+
+/* =================xxx=== Section 03 ===xxx================= */
+/* ======================= Section 04 ======================= */
+section.section-04 {
+  padding: 45px 0;
+}
+
+section.section-04 .content .faq-wrapper {
+  padding-top: 25px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+section.section-04 .content .faq-wrapper .faq-box {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 15px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 20px 0;
+}
+
+section.section-04 .content .faq-wrapper .faq-box .question {
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+section.section-04 .content .faq-wrapper .faq-box .question h2 {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+section.section-04 .content .faq-wrapper .faq-box .question h2::after {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  font-size: 22px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-10px, -50%);
+          transform: translate(-10px, -50%);
+}
+
+section.section-04 .content .faq-wrapper .faq-box .answare {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+section.section-04 .content .faq-wrapper .faq-box .answare p {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+section.section-04 .content .faq-wrapper .faq-box.active .question h2::after {
+  content: "\f0d8";
+}
+
+section.section-04 .content .faq-wrapper .faq-box.active .answare {
+  height: auto;
+}
+
+section.section-04 .content .faq-wrapper .faq-box.active .answare p {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+section.section-04 .content .btn {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px 60px;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  margin-top: 45px;
+  font-size: 20px;
+}
+
+/* =================xxx=== Section 04 ===xxx================= */
+/* ======================= Section 05 ======================= */
+section.section-05 {
+  padding: 45px 0;
+}
+
+section.section-05 .content .content-wrapper {
+  margin: 15px 0;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px 25px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+section.section-05 .content .content-wrapper h2 {
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+section.section-05 .content .content-wrapper p {
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+
+/* =================xxx=== Section 05 ===xxx================= */
+/* ======================= Footer ======================= */
+footer {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+/* =================xxx=== Footer ===xxx================= */
+@media only screen and (max-width: 768px) {
+  section.section-02 .content .box {
+    max-width: 100%;
+  }
+  section.section-04 .content .faq-wrapper .faq-box .question h2::after {
+    right: -5px;
+  }
+  section.section-04 .content .faq-wrapper .faq-box .question h2 {
+    padding-right: 15px;
+  }
+  section.section-05 .content .heading {
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+}
+
+/* ==================================xxx=== Home Page ===xxx================================== */
+/* ======================================== Home Page ======================================== */
+/* ======================= Hero ======================= */
+section.package-container {
+  padding: 80px 0;
+}
+
+section.package-container .content {
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+section.package-container .content .taxable-box-main-container {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 12px 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+section.package-container .content .tab-wrapper {
+  padding: 25px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+section.package-container .content .tab-wrapper .tab {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section.package-container .content .tab-wrapper .tab button {
+  max-width: 50%;
+  width: 100%;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 15px;
+  background: transparent;
+  -webkit-transition: all 0.4 ease;
+  transition: all 0.4 ease;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+section.package-container .content .tab-wrapper .tab button.active {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+section.package-container .content .box-wrapper {
+  overflow-x: hidden;
+  padding: 25px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  min-height: 400px;
+}
+
+section.package-container .content .box-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+section.package-container .content .box-wrapper.active {
+  min-height: 1010px;
+}
+
+section.package-container .content .box-wrapper.active::-webkit-scrollbar {
+  width: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+section.package-container .content .box-wrapper .box {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button span,
+section.package-container .content .box-wrapper .box .top-buttons button input {
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button span::-webkit-input-placeholder,
+section.package-container .content .box-wrapper .box .top-buttons button input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button span:-ms-input-placeholder,
+section.package-container .content .box-wrapper .box .top-buttons button input:-ms-input-placeholder {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button span::-ms-input-placeholder,
+section.package-container .content .box-wrapper .box .top-buttons button input::-ms-input-placeholder {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .top-buttons button span::placeholder,
+section.package-container .content .box-wrapper .box .top-buttons button input::placeholder {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .order-price {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 15px 0;
+}
+
+section.package-container .content .box-wrapper .box .agree-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+
+section.package-container .content .box-wrapper .box .agree-checkbox input {
+  max-width: 50px;
+  padding: 15px;
+  background: transparent;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+}
+
+section.package-container .content .box-wrapper .box .agree-checkbox label {
+  text-align: center;
+  font-size: 12px;
+  color: #DDDDDD;
+}
+
+section.package-container .content .box-wrapper .box .agree-checkbox label a {
+  color: gold;
+  text-decoration: none;
+}
+
+section.package-container .content .box-wrapper .box .btn.generate {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 6px 35px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px;
+  margin: auto;
+  display: block;
+}
+
+section.package-container .content .box-wrapper .box .checkbox-box-wrapper .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+section.package-container .content .box-wrapper .box .checkbox-box-wrapper .checkbox i {
+  color: #FFFFFF;
+  font-size: 8px;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 4px 7px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section.package-container .content .box-wrapper .box .checkbox-box-wrapper .checkbox span {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+section.package-container .content .box-wrapper .box .custom-function {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 5px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header i {
+  color: #FFFFFF;
+  font-size: 8px;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 4px 7px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header span {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header .buttons {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 2px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header .buttons button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+section.package-container .content .box-wrapper .box .custom-function .header .buttons button i {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  font-size: 16px;
+}
+
+section.package-container .content .box-wrapper .box .custom-function textarea {
+  width: 100%;
+  resize: none;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  height: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-left: 150%;
+}
+
+section.package-container .content .box-wrapper .box .custom-function textarea.active {
+  padding: 7px;
+  height: 70px;
+  margin-left: 0;
+}
+
+section.package-container .content .box-wrapper .box .tax-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+section.package-container .content .box-wrapper .box .tax-box i {
+  color: #FFFFFF;
+  font-size: 8px;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 4px 7px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section.package-container .content .box-wrapper .box .tax-box span {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+section.package-container .content .box-wrapper .box .tax-box .buttons {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 2px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+section.package-container .content .box-wrapper .box .tax-box .buttons button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+section.package-container .content .box-wrapper .box .tax-box .buttons button i {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper {
+  -webkit-box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin-left: 150%;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper.active {
+  padding: 5px 12px;
+  margin-left: 0;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper h4 {
+  color: #FFFFFF;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper h4.heading {
+  text-align: center;
+  margin: 8px 0;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper div#input-box-container {
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper div#input-box-container::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper div#input-box-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 5px;
+  margin: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box i {
+  color: #FFFFFF;
+  font-size: 8px;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 4px 7px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box span {
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box .buttons button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box .buttons button i {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .taxable-box .buttons input {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 2px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
+  max-width: 50px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 12px 0;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper button.delete {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper button.delete i {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 7px;
+  border-radius: 7px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input {
+  max-width: 90px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  padding: 4px 8px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input:nth-child(1), section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input:nth-child(2) {
+  margin-right: 8px;
+  display: block;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input:nth-child(3) {
+  max-width: 40px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper .input-box-wrapper .input-box input::placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+section.package-container .content .box-wrapper .box .taxable-box-wrapper #new-wallet {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 7px 25px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+section.package-container .content .box-wrapper #box-2 {
+  right: -180%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+section.package-container .content .box-wrapper.active #box-1 {
+  left: -180%;
+}
+
+section.package-container .content .box-wrapper.active #box-2 {
+  right: 0%;
+  max-height: 100%;
+}
+
+section.package-container .content .box-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 5px;
+  margin: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+section.package-container .content .box-wrapper::-webkit-scrollbar-track {
+  width: 5px;
+}
+
+/* =================xxx=== Hero ===xxx================= */
+@media only screen and (max-width: 768px) {
+  section.section-02 .content .box {
+    max-width: 100%;
+  }
+  section.section-04 .content .faq-wrapper .faq-box .question h2::after {
+    right: -5px;
+  }
+  section.section-04 .content .faq-wrapper .faq-box .question h2 {
+    padding-right: 15px;
+  }
+  section.section-05 .content .heading {
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+}
+
+/* ==================================xxx=== Home Page ===xxx================================== */
+/*# sourceMappingURL=style.css.map */
